@@ -1,11 +1,12 @@
 /* ================================================================================ */
 /*                          SITE WEB DE L'ASSOCIATION UCC                           */
 /* ================================================================================ */
-/* Nom du fichier  : script.js                                                      */
-/* Type de fichier : script d'exécution (.js)                                       */
-/* Auteurs         : Léo MULLIER                                                    */
-/* Créé le         : 21/04/2022                                                     */
-/* Mis à jour le   : 01/09/2022                                                     */
+/* Nom du fichier     : script.js                                                   */
+/* Type de fichier    : script d'exécution (.js)                                    */
+/* Créateur           : Léo MULLIER                                                 */
+/* Responsable actuel : Victor Demessance                                           */
+/* Créé le            : 21/04/2022                                                  */
+/* Mis à jour le      : 0_/10/2024                                                  */
 /* ================================================================================ */
 
 
