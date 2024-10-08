@@ -1,0 +1,160 @@
+<!-- ================================================================================ -->
+<!--                          SITE WEB DE L'ASSOCIATION UCC                           -->
+<!-- ================================================================================ -->
+<!-- Nom du fichier  : contact.html                                                   -->
+<!-- Type de fichier : page Web (.html)                                               -->
+<!-- Auteurs         : Léo MULLIER                                                    -->
+<!-- Créé le         : 30/08/2022                                                     -->
+<!-- Mis à jour le   : 01/09/2022                                                     -->
+<!-- ================================================================================ -->
+
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <!-- Déclarations de l'entête du fichier -->
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/icone.png">
+        <title>UCC - Accueil</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="body" id="body" onscroll="deplacer_logo_principal(); deplacer_arriere_plan(); afficher_masquer_titre_ucc(); afficher_masquer_etoiles(); afficher_masquer_logo_scroll()">
+        <!-- Bandeau supérieur du menu -->
+        <header class="header">
+            <div class="header_gauche">
+                <div class="header_gauche_titre">
+                    <a class="sans_decoration" href="index.html">Accueil</a>
+                </div>
+
+                <div class="header_gauche_titre">
+                    <a class="sans_decoration" href="marche.html">Notre marche</a>
+                </div>
+            </div>
+
+            <img class="logo_principal avec_pointeur" id="logo_principal" src="img/logo.svg" onclick="acces_accueil()">
+
+            <div class="header_droit">
+                <div class="header_droit_titre">
+                    <a class="sans_decoration" href="actualites.html">Nos actualités</a>
+                </div>
+
+                <div class="header_droit_titre">
+                    <a class="sans_decoration" href="contact.html">Nous contacter</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Corps du site et contenus -->
+        <main class="main">
+            <div class="arriere_plan" id="arriere_plan">
+            </div>
+            
+            <div class="titre_principal" id="titre_principal">
+                Nous contacter
+            </div>
+
+            <img src="img/icone_scroll.svg" class="logo_scroll" id="logo_scroll">
+
+            <img src="img/etoiles.svg" class="etoiles" id="etoiles">
+
+            <div class="titre_section">
+                Par email
+            </div>
+
+            <p class="texte_corps">
+                C'est d'ailleurs le moyen de nous contacter à privilégier pour toute demande d’informations supplémentaires autour de l’association, nos évènements ou des cancers. Dans tous les cas, n’hésite plus, on ne considérera jamais que tes interrogations sont bêtes ou inutiles… Un membre de la team correspondant à ta requête se fera un plaisir de t’adresser une réponse détaillée dans les meilleurs délais. Tu peux cliquer sur l'adresse email ci-dessous pour te préparer automatiquement l'envoi du message ou simplement la copier coller en destinataire dans ta messagerie habituelle.
+            </p>
+
+            <a href="mailto:ucc@assos.utc.fr?subject=✉️%20Demande%20de%20contact%20depuis%20le%20site%20de%20UCC
+                            &body=Tu%20peux%20être%20bavard%20ici%20on%20appréciera%20d'autant%20plus%20la%20lecture%20de%20ton%20message%20😉" class="sans_decoration">
+                <table class="tableau_contact" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="cell1_contact">
+                            <img class="image_contact" src="img/email.png"/>
+                        </td>
+                        <td class="cell2_contact">
+                            <p class="legende_contact">
+                                ucc@assos.utc.fr
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+
+            <p class="texte_corps">
+                Avis aux entreprises et institutions qui souhaiteraient à leur tour soutenir nos engagements et valeurs avec une aide humaine, technique, logistique ou financière, nous vous invitons à utiliser également cette adresse email pour vous rapprocher de l’équipe sponsors de UCC.
+            </p>
+
+            <div class="titre_section">
+                Par message sur les réseaux sociaux
+            </div>
+
+            <p class="texte_corps">
+                Si tu te sens plus à l'aise à nous contacter via nos réseaux sociaux, aucun souci ! L'équipe communication de UCC sera toujours à ton écoute. Il ne te reste plus qu'à choisir ton application préférée ci-dessous :
+            </p>
+
+            <a href="https://www.facebook.com/ucc.utc" class="sans_decoration" target="_blank">
+                <table class="tableau_contact" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="cell1_contact">
+                            <img class="image_contact" src="img/facebook.png"/>
+                        </td>
+                        <td class="cell2_contact">
+                            <p class="legende_contact">
+                                Juju Cécé
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+
+            <a href="https://m.me/ucc.utc" class="sans_decoration" target="_blank">
+                <table class="tableau_contact" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="cell1_contact">
+                            <img class="image_contact" src="img/messenger.png"/>
+                        </td>
+                        <td class="cell2_contact">
+                            <p class="legende_contact">
+                                Juju Cécé
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+
+            <a href="https://www.instagram.com/ucc.utc/" class="sans_decoration" target="_blank">
+                <table class="tableau_contact" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="cell1_contact">
+                            <img class="image_contact" src="img/instagram.png"/>
+                        </td>
+                        <td class="cell2_contact">
+                            <p class="legende_contact">
+                                ucc.utc
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </a>
+
+            <div class="titre_section">
+                Par téléphone
+            </div>
+
+            <p class="texte_corps texte_indisponible">
+                👷 Oups, ce contenu est momentanément indisponible, notre beau papillon blanc t’invite à repasser par ici plus tard…
+            </p>
+        </main>
+
+        <!-- Pied de page -->
+        <footer>
+
+        </footer>
+
+        <!-- Appel du fichier externe JavaScript -->
+	    <script type="text/javascript" src="js/script.js">
+        </script>
+    </body>
+</html>

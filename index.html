@@ -1,0 +1,229 @@
+<!-- ================================================================================ -->
+<!--                          SITE WEB DE L'ASSOCIATION UCC                           -->
+<!-- ================================================================================ -->
+<!-- Nom du fichier  : index.html                                                     -->
+<!-- Type de fichier : page Web (.html)                                               -->
+<!-- Auteurs         : Léo MULLIER                                                    -->
+<!-- Créé le         : 21/04/2022                                                     -->
+<!-- Mis à jour le   : 01/09/2022                                                     -->
+<!-- ================================================================================ -->
+
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <!-- Déclarations de l'entête du fichier -->
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/icone.png">
+        <title>UCC - Accueil</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="body" id="body" onscroll="deplacer_logo_principal(); deplacer_arriere_plan(); afficher_masquer_titre_ucc(); afficher_masquer_etoiles(); afficher_masquer_logo_scroll()">
+        <!-- Bandeau supérieur du menu -->
+        <header class="header">
+            <div class="header_gauche">
+                <div class="header_gauche_titre">
+                    <a class="sans_decoration" href="index.html">Accueil</a>
+                </div>
+
+                <div class="header_gauche_titre">
+                    <a class="sans_decoration" href="marche.html">Notre marche</a>
+                </div>
+            </div>
+
+            <img class="logo_principal avec_pointeur" id="logo_principal" src="img/logo.svg" onclick="acces_accueil()">
+
+            <div class="header_droit">
+                <div class="header_droit_titre">
+                    <a class="sans_decoration" href="actualites.html">Nos actualités</a>
+                </div>
+
+                <div class="header_droit_titre">
+                    <a class="sans_decoration" href="contact.html">Nous contacter</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Corps du site et contenus -->
+        <main class="main">
+            <div class="arriere_plan" id="arriere_plan">
+            </div>
+            
+            <div class="titre_principal" id="titre_principal">
+                Unis Contre le Cancer
+            </div>
+
+            <img src="img/icone_scroll.svg" class="logo_scroll" id="logo_scroll">
+
+            <img src="img/etoiles.svg" class="etoiles" id="etoiles">
+
+            <div class="titre_section">
+                Bienvenue parmis nous
+            </div>
+
+            <p class="texte_corps">
+                Toute l’équipe d’UCC, ainsi que le papillon qui orne son logo, te souhaitent la bienvenue sur notre site Web. Cet espace numérique a pour objectifs de présenter l’association que nous constituons aux internautes et d’offrir une visibilité plus large à nos valeurs, nos actions et nos contenus. Ainsi, nous espérons ici répondre à toutes les questions que tu puisses te poser à propos des cancers et sensibiliser un public qui n’est pas encore attentif à ces questions de santé. 
+            </p>
+
+            <p class="texte_corps">
+                Que tu découvres à l’instant en lisant ces mots notre association, que tu nous aies déjà rencontré lors d’évènements ou ateliers, ou que tu nous suives déjà avec beaucoup d’attention sur d’autres médias, nous te souhaitons une navigation agréable et enrichissante parmi les différentes rubriques du site d’Unis Contre le Cancer.
+            </p>
+
+            <p class="texte_corps">
+                Si toute fois il te manquait une information ou une précision sur notre association, la maladie ou nos manifestations, n’hésite pas à te rendre dans la section Nous contacter afin de nous adresser ta requête.
+            </p>
+
+            <div class="titre_section">
+                Qui sommes-nous ?
+            </div>
+
+            <p class="texte_corps">
+                Unis Contre le Cancer a été fondée en février 2022 par un groupe de 12 étudiants de l’Université de Technologie de Compiègne (UTC) en France, tous animés par l’envie de promouvoir et de développer la connaissance, la sensibilisation et la prévention autour d’un thème majeur, sérieux et délicat, celui des différents cancers. Depuis, les rangs de l’équipe ont évolué tandis que les générations d’étudiants se sont succédé. Ainsi, aujourd’hui notre association compte 11 membres motivés et hâtifs de proposer des contenus et évènements à visée pédagogique et pour la santé publique.
+            </p>
+
+            <p class="texte_corps">
+                Nous vous affichons ici nos petites têtes, pleines d’idées et d’espoirs pour donner un réel sens à notre investissement associatif collectif.
+            </p>
+
+            <div class="liste_membres">
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Maud
+                    </p>
+                    <p class="role_membres">
+                        Co-présidente
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Bastien
+                    </p>
+                    <p class="role_membres">
+                        Co-président
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Chloé
+                    </p>
+                    <p class="role_membres">
+                        Secrétaire
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Antoine
+                    </p>
+                    <p class="role_membres">
+                        Trésorier
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Félicie
+                    </p>
+                    <p class="role_membres">
+                        Resp communication
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Mélusine
+                    </p>
+                    <p class="role_membres">
+                        Resp graphisme
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/leo.jpg"/>
+                    <p class="nom_membres">
+                        Léo
+                    </p>
+                    <p class="role_membres">
+                        Resp informatique
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Gaspard
+                    </p>
+                    <p class="role_membres">
+                        Resp logistique
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Victor
+                    </p>
+                    <p class="role_membres">
+                        Resp parcours
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Camille
+                    </p>
+                    <p class="role_membres">
+                        Resp sponsors
+                    </p>
+                </div>
+                <div class="item_membres">
+                    <img class="photo_membres" src="img/membre.jpg"/>
+                    <p class="nom_membres">
+                        Timoté
+                    </p>
+                    <p class="role_membres">
+                        Resp village
+                    </p>
+                </div>
+            </div>
+
+            <div class="titre_section">
+                Draw the life of UCC
+            </div>
+
+            <p class="texte_corps texte_indisponible">
+                👷 Oups, ce contenu est momentanément indisponible, notre beau papillon blanc t’invite à repasser par ici plus tard…
+            </p>
+
+            <div class="titre_section">
+                Nos partenaires
+            </div>
+
+            <p class="texte_corps">
+                Nous souhaitons ici mettre en lumière les efforts, l’aide technique, financière ou humaine et le soutien offerts par les entreprises et institutions partenaires suivantes. Leur engagement aux côtés d’UCC et des causes défendues par l’association nous permettent de l’organisation de nouvelles actions, avec notamment notre projet naissant d’une marche caritative dans la ville de Compiègne. Merci beaucoup aux acteurs locaux et aux confrères d’autres associations, illustrés ci-dessous, qui nous font confiance.
+            </p>
+
+            <p class="texte_corps texte_indisponible">
+                👷 Oups, ce contenu est momentanément indisponible, notre beau papillon blanc t’invite à repasser par ici plus tard…
+            </p>
+
+            <div class="titre_section">
+                Faire un don à l'association
+            </div>
+
+            <p class="texte_corps texte_indisponible">
+                👷 Oups, ce contenu est momentanément indisponible, notre beau papillon blanc t’invite à repasser par ici plus tard…
+            </p>
+        </main>
+
+        <!-- Pied de page -->
+        <footer>
+
+        </footer>
+
+        <!-- Appel du fichier externe JavaScript -->
+	    <script type="text/javascript" src="js/script.js">
+        </script>
+    </body>
+</html>

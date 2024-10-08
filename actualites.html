@@ -1,0 +1,165 @@
+<!-- ================================================================================ -->
+<!--                          SITE WEB DE L'ASSOCIATION UCC                           -->
+<!-- ================================================================================ -->
+<!-- Nom du fichier  : actualites.html                                                -->
+<!-- Type de fichier : page Web (.html)                                               -->
+<!-- Auteurs         : Léo MULLIER                                                    -->
+<!-- Créé le         : 30/08/2022                                                     -->
+<!-- Mis à jour le   : 01/09/2022                                                     -->
+<!-- ================================================================================ -->
+
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <!-- Déclarations de l'entête du fichier -->
+        <meta charset="UTF-8">
+        <link rel="icon" href="img/icone.png">
+        <title>UCC - Accueil</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="body" id="body" onscroll="deplacer_logo_principal(); deplacer_arriere_plan(); afficher_masquer_titre_ucc(); afficher_masquer_etoiles(); afficher_masquer_logo_scroll()">
+        <!-- Bandeau supérieur du menu -->
+        <header class="header">
+            <div class="header_gauche">
+                <div class="header_gauche_titre">
+                    <a class="sans_decoration" href="index.html">Accueil</a>
+                </div>
+
+                <div class="header_gauche_titre">
+                    <a class="sans_decoration" href="marche.html">Notre marche</a>
+                </div>
+            </div>
+
+            <img class="logo_principal avec_pointeur" id="logo_principal" src="img/logo.svg" onclick="acces_accueil()">
+
+            <div class="header_droit">
+                <div class="header_droit_titre">
+                    <a class="sans_decoration" href="actualites.html">Nos actualités</a>
+                </div>
+
+                <div class="header_droit_titre">
+                    <a class="sans_decoration" href="contact.html">Nous contacter</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Corps du site et contenus -->
+        <main class="main">
+            <div class="arriere_plan" id="arriere_plan">
+            </div>
+            
+            <div class="titre_principal" id="titre_principal">
+                Nos actualités
+            </div>
+
+            <img src="img/icone_scroll.svg" class="logo_scroll" id="logo_scroll">
+
+            <img src="img/etoiles.svg" class="etoiles" id="etoiles">
+
+            <div class="titre_section">
+                Ce que te propose l'association
+            </div>
+
+            <div class="liste_actualites">
+                <div class="item_actualites" onclick="window.location.assign('marche.html')">
+                    <img class="photo_actualites" src="img/actu 25 09 22.jpg"/>
+                    <p class="date_actualites">
+                        25 sept 2022
+                    </p>
+                    <p class="lieu_actualites">
+                        Parc Songeons - Compiègne
+                    </p>
+                    <p class="description_actualites">
+                        Date et lieu provisoire pour la tenue de la marche caritative entièrement organisée par UCC. Les informations seront actualisées prochainement. Une rubrique de ce site est dédiée à cet évènement qui représente une action majeure de la vie de l'association.
+                    </p>
+                    <p class="details_actualites">
+                        Clique pour plus de détails...
+                    </p>
+                </div>
+
+                <div class="item_actualites" onclick="window.location.assign('https://framaforms.org/rejoins-nous-1654541382')">
+                    <img class="photo_actualites" src="img/actualites.jpg"/>
+                    <p class="date_actualites">
+                        1 sept 2022
+                    </p>
+                    <p class="lieu_actualites">
+                        UTC - Compiègne
+                    </p>
+                    <p class="description_actualites">
+                        Unis Contre le Cancer fait sa rentrée A22. Un réel symbole pour nous, c'est la première rentrée universitaire depuis la fondation de l'association. On espère pouvoir proposer dès fin septembre notre marche caritative au grand public. Alors, n'hésitez pas à nous rejoindre !
+                    </p>
+                    <p class="details_actualites">
+                        Clique pour plus de détails...
+                    </p>
+                </div>
+
+                <div class="item_actualites" onclick="window.location.assign('https://www.instagram.com/p/CgykTmdIGkD/?utm_source=ig_web_copy_link')">
+                    <img class="photo_actualites" src="img/actu 03 08 22.jpg"/>
+                    <p class="date_actualites">
+                        3 août 2022
+                    </p>
+                    <p class="lieu_actualites">
+                        UTC - Compiègne
+                    </p>
+                    <p class="description_actualites">
+                        Tu es attiré(e) par nos missions, valeurs et engagements et tu es étudiant(e) à l'UTC. N'attends plus, la plateforme pour nous rejoindre et intégrer pour le semestre à venir une team est déjà ouverte. Il te suffit de remplir le questionnaire de recrutement. A très vite !
+                    </p>
+                    <p class="details_actualites">
+                        Clique pour plus de détails...
+                    </p>
+                </div>
+
+                <div class="item_actualites" onclick="window.location.assign('https://www.instagram.com/p/CdgguouorRg/?utm_source=ig_web_copy_link')">
+                    <img class="photo_actualites" src="img/actu 14 05 22.jpg"/>
+                    <p class="date_actualites">
+                        14 mai 2022
+                    </p>
+                    <p class="lieu_actualites">
+                        Lachelle
+                    </p>
+                    <p class="description_actualites">
+                        On vient te parler d’une course caritative organisée à Lachelle ! L’association "Aline en lutte contre la leucémie" s'associe avec "Une note d'espoir" pour l’organisation de courses et marches caritatives pour soutenir la cause du cancer pédiatrique.
+                    </p>
+                    <p class="details_actualites">
+                        Clique pour plus de détails...
+                    </p>
+                </div>
+
+                <div class="item_actualites" onclick="window.location.assign('https://www.instagram.com/p/CdVfnL-IAsv/?utm_source=ig_web_copy_link')">
+                    <img class="photo_actualites" src="img/actu 13 05 22.jpg"/>
+                    <p class="date_actualites">
+                        13 mai 2022
+                    </p>
+                    <p class="lieu_actualites">
+                        UTC - Compiègne
+                    </p>
+                    <p class="description_actualites">
+                        Unis Contre le Cancer est officiellement présentée au grand public et aux étudiants de l'UTC. Description, missions, perspectives et contexte sanitaire oncologique actuel, on te précise tout pour faire comprendre nos engagements et gagner en visibilité.
+                    </p>
+                    <p class="details_actualites">
+                        Clique pour plus de détails...
+                    </p>
+                </div>
+            </div>
+
+            <div class="titre_section">
+                A propos des actualités
+            </div>
+
+            <p class="texte_corps">
+                Nous nous efforçons de tenir à jour cette page afin de te proposer du contenu, des ateliers et évènements régulièrement. Ces informations sont également publiées sur <a href="https://www.instagram.com/ucc.utc/" class="sans_decoration" target="_blank">notre profil Instagram</a>. N'hésite pas à t'y abonner pour ne rien louper de l'activité de UCC !
+            </p>
+        </main>
+
+        <!-- Pied de page -->
+        <footer>
+
+        </footer>
+
+        <!-- Appel du fichier externe JavaScript -->
+	    <script type="text/javascript" src="js/script.js">
+        </script>
+    </body>
+</html>
