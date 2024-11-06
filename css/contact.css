@@ -1,0 +1,121 @@
+.contact {
+    margin-inline: 2rem;;
+}
+
+
+.contact-row {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-block: 2rem;
+}
+
+
+.contact-svg {
+	height: 23rem;
+	margin-left: 3rem;
+    flex: 0.5;
+}
+
+#envelope {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  #star1, #star2, #star3, #star4, #star5, #star6 {
+    animation: blink 1s ease-in-out infinite;
+  }
+  #star2 { animation-delay: 100ms; }
+  #star3 { animation-delay: 500ms; }
+  #star4 { animation-delay: 700ms; }
+  #star5 { animation-delay: 300ms; }
+  #star6 { animation-delay: 200ms }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.contact-form {
+    flex: 0.5;
+	min-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    align-items: center;
+	
+    .form-control {
+        position: relative;
+        background-color: #f2f6f8;
+        border-radius: 2rem;
+        border: none;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        font-size: 1rem;
+        width: 20rem;
+		
+        &.thick {
+            height: 1.5rem;
+            padding: .5rem 1rem;
+        }
+            
+        &:focus {
+            background-color: #f2f6f8;
+            border: none;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+        }
+    }
+
+	.message .form-control {
+        padding: .5rem;
+        resize: none;
+        width: 20rem;
+        padding-inline: 1rem;
+	}
+	
+  ::placeholder {
+    font-size: 1rem;
+    color: #0000003d;
+    position: relative;
+    left: 0;
+  }
+
+}
+
+.submit-button {
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-image:linear-gradient(131deg, #6ab4dc, #248bba, #2397cd, #0d8dc9);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover:enabled {
+    box-shadow: 0 0.5em 0.5em -0.4em #1c8fc5;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
+}

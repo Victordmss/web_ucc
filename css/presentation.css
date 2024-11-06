@@ -1,0 +1,94 @@
+.presentation-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+
+.carousel {
+    background: red;
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.carousel-item  {
+    height : 20rem;
+    width : 100%;
+    background: #1100ab2a;
+}
+
+.panel {
+    flex: 0.4;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0.3rem;
+}
+
+.panel-item {
+    width: 85%;
+    height: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding-block: 1rem;
+    background-color: #4F8F8F;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.presentation-content {
+    flex : 0.5;
+}
+
+
+.presentation-image {
+    flex : 0.4;
+    height:300px;
+    width: auto;
+}
+
+
+.presentation-description {
+    text-align: justify;
+    font-size: 1rem; 
+    margin-block: 1rem; 
+    color: black;
+}
+
+
+.presentation-button {
+    display: inline-block; 
+    margin-block: 1rem;
+    padding: 1rem; 
+    color: black; 
+    font-weight: bold;
+    border-radius: 2rem; 
+    cursor: pointer; 
+    background:linear-gradient(131deg, #6ab4dc, #248bba, #2397cd, #0d8dc9);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+    content: "\e080";
+}
+
+
+.presentation-button:hover   {
+    box-shadow: 0 0.5em 0.5em -0.4em #1c8fc5;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
+}
+
+
+#additional-text {
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}

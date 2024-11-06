@@ -1,0 +1,72 @@
+
+.equipe-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.equipe-description {
+    flex: 0.45;
+    text-align: justify;
+    font-size: 1rem; 
+    margin-block: 1rem; 
+    color: black;
+}
+
+.equipe-photos {
+    height: 100%;
+    flex: 0.5   ;
+    display: block;
+    min-height: 350px;
+    position: relative;
+}
+
+.equipe-photo-big {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: scale 0.5s; 
+}
+
+.equipe-photo-big:hover{
+    scale: 1.03;
+}
+
+.equipe-photo-small-1 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    border: 2px solid black;
+    bottom: 260px;
+    left: 0px;
+    z-index: 1;
+    transition: scale 0.5s; 
+}
+
+
+.equipe-photo-small-1:hover{
+    scale:1.04;
+}
+
+
+.equipe-photo-small-2 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    height: 180px;
+    width: 120px;
+    background: rgb(255, 234, 47);
+    bottom: 150px;
+    left: 360px;
+    z-index: 1;
+    transition: scale 0.5s; 
+}
+
+
+.equipe-photo-small-2:hover{
+    scale:1.04;
+}
