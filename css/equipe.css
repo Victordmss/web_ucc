@@ -1,3 +1,13 @@
+/* ================================================================================ */
+/*                          STYLE DU SITE WEB DE L'ASSOCIATION UCC                    */
+/* ================================================================================ */
+/* Nom du fichier     : equipe.css                                                   */
+/* Type de fichier    : feuille de style (.css)                                     */
+/* Créateur           : Victor Demessance                                          */
+/* Créé le            : 08/10/2024                                                 */
+/* ================================================================================ */
+
+
 .equipe-row {
     display: flex;
     flex-direction: row;
