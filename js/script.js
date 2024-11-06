@@ -19,3 +19,36 @@ function toggleText() {
     }
 }
 
+
+// Fonction de gestion duc carousel de présentation 
+
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+const totalItems = items.length;
+let intervalSlidingCarousel = setInterval(nextSlide, 8000);
+
+function showSlide(index) {
+    currentIndex = (currentIndex + 1) % totalItems;
+    console.log(currentIndex);
+
+
+    const offset = -currentIndex * 100;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+
+    resetInterval();
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Réinitialiser l'intervalle
+function resetInterval() {
+    clearInterval(intervalSlidingCarousel);
+    intervalSlidingCarousel = setInterval(nextSlide, 8000);
+}
+
