@@ -97,10 +97,7 @@
 }
 
 
-
-
-.popup-container {
-    background-color: red;
+.popup-background {
     display: none; 
     position: fixed;
     top: 0;
@@ -113,20 +110,20 @@
     z-index: 1000;
   }
   
-  /* Ajout de l'animation sur le contenu du popup */
+
 .popup-content {
     background-color: white;
-    padding: 20px;
+    width: 70%;
+    height: 70%;
+    max-width: 1000px;
+    max-height: 8000px;
     border-radius: 8px;
-    max-width: 400px;
-    text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    transform: scale(0.7); /* Réduction initiale pour l'effet de zoom */
-    opacity: 0; /* Transparence initiale */
-    animation: popupShow 0.5s ease forwards; /* Lancer l'animation */
+    transform: scale(0.7); 
+    opacity: 0; 
+    animation: popupShow 0.5s ease forwards; 
 }
-  
-/* Animation d'apparition avec effet de zoom et fondu */
+
 @keyframes popupShow {
     from {
         transform: scale(0.7);
@@ -138,12 +135,16 @@
     }
 }
   
-  /* Style du bouton de fermeture */
 .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
+    font-size: 2rem;
     cursor: pointer;
+    transition: scale 1s ease-in-out; 
+}
+
+.close-btn:hover {
+    transform: scale(1.25);
 }
   
