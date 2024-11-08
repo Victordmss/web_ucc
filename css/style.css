@@ -184,12 +184,30 @@ ul {
 
 .social-column .icon-content a[data-social="accueil"] .filled,
 .social-column .icon-content a[data-social="accueil"] ~ .tooltip {
-    background-color: #1c8fc5;
-  }
+  background: linear-gradient(
+    45deg,
+    #55a1c4,
+    #1c8fc5,
+    #0c57a2
+  );  
+}
   
 
 .social-column .icon-content a[data-social="facebook"] .filled,
 .social-column .icon-content a[data-social="facebook"] ~ .tooltip {
-    background-color: #1100ab;
+    background-color: #4267B2;
   }
+
+
+.social-column .icon-content a[data-social="donate"] .filled,
+.social-column .icon-content a[data-social="donate"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #c3a5e8,
+    #9987dd,
+    #7e64dc
+  );
+}
+    
+  
   

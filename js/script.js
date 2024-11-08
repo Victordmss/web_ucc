@@ -9,9 +9,9 @@
 
 
 
-// Fonction d'affichage du texte supplémentaire de l'historique de l'association
-function toggleText() {
-    var text = document.getElementById("additional-text");
+// Fonction d'affichage/suppression d'une section 
+function toggleText(id) {
+    var text = document.getElementById(id);
     if (text.style.display === "none") {
         text.style.display = "block";
     } else {
@@ -19,6 +19,24 @@ function toggleText() {
     }
 }
 
+
+// Fonction pour afficher ou masquer le popup
+function togglePopup() {
+    const popup = document.getElementById('popup-equipe');
+    if (popup.style.display === 'flex') {
+      popup.style.display = 'none';
+    } else {
+      popup.style.display = 'flex';
+    }
+  }
+  
+  // Fermer le popup si on clique en dehors du contenu
+  window.onclick = function(event) {
+    const popup = document.getElementById('popup-equipe');
+    if (event.target === popup) {
+      popup.style.display = 'none';
+    }
+  }
 
 // Fonction de gestion duc carousel de présentation 
 
