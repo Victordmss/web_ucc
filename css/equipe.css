@@ -148,3 +148,47 @@
     transform: scale(1.25);
 }
   
+
+.trombinoscope {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .member {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-5px); 
+  }
+  
+
+  .member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Image ronde */
+    margin-bottom: 10px;
+  }
+  
+
+  .member h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+
+  .member p {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
