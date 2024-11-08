@@ -1,0 +1,52 @@
+/* ================================================================================ */
+/*                          STYLE DU SITE WEB DE L'ASSOCIATION UCC                    */
+/* ================================================================================ */
+/* Nom du fichier     : header.css                                                   */
+/* Type de fichier    : feuille de style (.css)                                     */
+/* Créateur           : Victor Demessance                                          */
+/* Créé le            : 08/10/2024                                                 */
+/* ================================================================================ */
+
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.header_container {
+    max-width: 1000px;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header_logo {
+    width: 150px; 
+    height: auto;
+    padding-right: 3rem;
+}
+
+
+.header_title {
+    font-size: 1.5rem; 
+    letter-spacing: .03rem;
+}
+
+
+.header_title a {
+    color: white;
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+
+
+.header_title a:hover {
+    color: #4a91e2; 
+}

@@ -1,0 +1,20 @@
+/* ================================================================================ */
+/*                          STYLE DU SITE WEB DE L'ASSOCIATION UCC                    */
+/* ================================================================================ */
+/* Nom du fichier     : footer.css                                                   */
+/* Type de fichier    : feuille de style (.css)                                     */
+/* Créateur           : Victor Demessance                                          */
+/* Créé le            : 08/10/2024                                                 */
+/* ================================================================================ */
+
+
+.footer {
+    position: relative;
+    background: #1c90c59c;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
